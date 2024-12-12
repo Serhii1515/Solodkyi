@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Information search</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-group input-group">
+      <span class="input-group-addon"
+        ><i class="glyphicon glyphicon-search"></i
+      ></span>
+      <input
+        name="query"
+        id="txt_query"
+        placeholder="Search"
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <table id="table" class="table table-hover">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Telephone</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>solodkyiserhii@gmail.com</th>
+          <td>Solodkyi Serhii</td>
+          <td>097-001-44-79</td>
+          <td>https://travelsolodkyi.blogspot.com/</td>
+        </tr>
+
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>Page</th>
+         
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Home page</th>
+          
+         
+          <td><p class="lead tex-muted">
+            <a
+            href="index.html"
+            target="_blank"
+            class="btn btn-primary"
+          >
+          <font color="red">Home page</font> <img
+            class="icon"
+            height="62"
+            src="icons Social nerworks/Будинок.png"
+            alt="Home page">
+          </a></p></p>
+            
+          </p>
+        </td>
+        </tr>
+        <th>Photographs</th>
+          
+         
+        <td><p class="lead tex-muted">
+          <a
+          href="Photo.html"
+          target="_blank"
+          class="btn btn-primary"
+        >
+        <font color="red">Photographs</font> <img
+          class="icon"
+          height="62"
+          src="icons Social nerworks/Photo.png"
+          alt="Photographs">
+        </a></p></p>
+          
+        </p>
+      </td>
+      </tr>
+    </table>
+    <script>
+      $("input#txt_query").quicksearch("table#table tbody tr");
+    </script>
+<p class="lead tex-muted">
+    <a
+    href="index.html"
+    target="_blank"
+    class="btn btn-primary"
+  >
+  <font color="red">Back to Solodkyi Serhii home page</font> <img
+    class="icon"
+    height="62"
+    src="icons Social nerworks/Будинок.png"
+    alt="Home page">
+  </a></p></p>
+    
+  </p>
+
+  </body>
+</html>
