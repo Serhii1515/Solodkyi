@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>SlideShow</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="SlideShow.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="images">
+        <img src="Photo Solodkyi Serhii/Solodkyi Serhii 13.jpg" />
+        <img src="Photo Solodkyi Serhii/Solodkyi Serhii 4.jpg" />
+        <img src="Photo Solodkyi Serhii/Serhii Solodkyi.jpeg" />
+        <img src="Photo Solodkyi Serhii/Solodkyi Serhii 17.jpg" />
+        <img src="Photo Solodkyi Serhii/Solodkyi Serhii 27.jpg" />
+      </div>
+    </div>
+
+    <script>
+      var indexValue = 0;
+      function SlideShow() {
+        setTimeout(SlideShow, 1500);
+        var x;
+        const img = document.querySelectorAll("img");
+        for (x = 0; x < img.length; x++) {
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if (indexValue > img.length) {
+          indexValue = 1;
+        }
+        img[indexValue - 1].style.display = "block";
+      }
+      SlideShow();
+    </script>
+  </body>
+</html>
