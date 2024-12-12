@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  animation-delay: 1.9s;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #e95123, #07b321);
+  height: 100vh;
+  animation-delay: 1.9s;
+}
+
+/* KEYFRAMES ANIMATTION */
+@keyframes snowRight {
+  100% {
+    width: 0;
+  }
+}

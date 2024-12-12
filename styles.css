@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  animation-delay: 1.9s;
+}
+
+body {
+  background-color: #9c3f77;
+  calor: #0f141e;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto Condensed", sans-serif;
+  animation-delay: 1.9s;
+
+  /* font: normal 16px "Roboto", sans-serif; */
+
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  animation-delay: 1.9s;
+}
+
+a:hover {
+  text-decoration: underline;
+  animation-delay: 1.9s;
+}
+
+a:active {
+  color: rgb(195, 24, 150);
+  animation-delay: 1.9s;
+}
+
+a:visited {
+  color: rgb(249, 249, 249);
+  animation-delay: 1.9s;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0 25);
+  animation-delay: 1.9s;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+  animation-delay: 1.9s;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+    animation-delay: 1.9s;
+  }
+}
+
+.info-text {
+  margin-left: 40px;
+  animation-delay: 1.3s;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+  animation-delay: 1.9s;
+}
+
+.info p {
+  color: #830e38;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  animation-delay: 1.9s;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 5px; */
+  /* word-spacing: 42px; */
+}
+/* Box Model */
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+  animation-delay: 1.9s;
+}
+
+/* .social { */
+/* background: green; */
+/* padding: 15px; */
+/* padding: 15px 40px; */
+/* padding: 15px 20px 25px 30px; */
+padding-top: 15px;
+padding-right: 20px;
+padding-bottom: 25px;
+padding-left: 30px;
+margin: 5px;
+
+border: 5px solid red;
+border-bottom-style: dotted;
+border-top-width: 15px;
+border-right-color: blue; /*
+} */
+
+/* .box-model > div {
+  float: left;
+  background: #000;
+  height: 200px;
+  border: 4px solid red;
+  width: 25%;
+  box-sizing: border-box;
+} */
+
+.bg-yellow {
+  background: #9f2386;
+  animation-delay: 1.9s;
+}
+
+.bg-green {
+  background: #4b9552;
+  animation-delay: 1.9s;
+}
+
+.bg-red {
+  background: #942828;
+  animation-delay: 1.9s;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  animation-delay: 1.9s;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  animation-delay: 1.9s;
+}
+
+.List {
+  padding: 0 20px;
+  animation-delay: 1.9s;
+}
+
+.List li {
+  color: #5f10c7;
+  margin-bottom: 10px;
+  animation-delay: 1.9s;
+}
+
+.table {
+  width: 100%;
+  animation-delay: 1.9s;
+}
+
+.table td {
+  padding-bottom: 10px;
+  animation-delay: 1.9s;
+}
+
+/*.table tr:nth-child (odd) {
+  background: red;
+}*/
+
+.Link-List {
+  list-style: none;
+  padding: 0;
+  animation-delay: 1.9s;
+}
+
+.Link-List Li {
+  margin-bottom: 10px;
+  animation-delay: 1.9s;
+}
+
+.contact h2 {
+  text-align: center;
+  animation-delay: 1.3s;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #770843;
+  animation-delay: 1.9s;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sising: border-box;
+  border: none;
+  background: blue;
+  border-bottom: 1px solid #662020;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+  animation-delay: 1.9s;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  animation-delay: 1.9s;
+}
+.row > .form-group {
+  width: 50%;
+  margin-right: 20px;
+  animation-delay: 1.9s;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0;
+  animation-delay: 1.9s;
+}
+
+.btn {
+  background: #111;
+  padding: 15px 20px;
+  color: #994e7d;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  animation-delay: 1.9s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  animation-delay: 1.9s;
+}
+
+/* Position */
+
+/* .position {
+  position: relative;
+  border: 4px solid black;
+  margin-top: 40px;
+  padding: 20px;
+  height: 300px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: lightcoral;
+} */
+/* KEYFRAMES ANIMATTION */
+@keyframes snowRight {
+  100% {
+    width: 0;
+  }
+}
