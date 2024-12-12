@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Player "Komentkosm"</title>
+    <link rel="stylesheet" type="text/css" href="Music.css" />
+  </head>
+  <body>
+    <div class="audio-player">
+      <audio id="audio" controls>
+        <source
+          src="Сергій Солодкий - Solodkyi Serhii Music 2 2024-02-07 15_26.m4a"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button id="play-pause-button">Play</button>
+        <input
+          type="range"
+          id="volume-control"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+        />
+      </div>
+      <div class="progress">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div id="current-time">0:00</div>
+      <div id="total-time">0:00</div>
+    </div>
+    <script src="Music.js"></script>
+  </body>
+</html>
