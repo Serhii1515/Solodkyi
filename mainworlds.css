@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #2bd70d;
+}
+.text {
+  position: relative;
+  max-width: 800px;
+  font-size: 30px;
+  text-align: center;
+  color: #a50fad;
+  margin: 20px;
+}
+.text span {
+  position: relative;
+  display: inline-block;
+}
