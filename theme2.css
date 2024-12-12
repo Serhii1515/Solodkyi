@@ -1,0 +1,37 @@
+:root {
+  --mainColor: Blue;
+  --bgColor: Green;
+  --lighterSectionShade: #333333;
+  --strongerSectionShade: #2c2c2c;
+  --secondaryColor: #4d4d4d;
+  --thirdColor: #5d5d5d;
+  --fontColor1: #fff;
+  --externalLinkIcon: url("");
+  --fourthColor: 34, 34, 34;
+  --fifthColor: #414141;
+  --fontColor2: #eeeeee;
+  --fontColor3: #999;
+  --lightBlue: #02b7a3;
+  --lightPink: #ee287c;
+  --lightOrange: #ee8b29;
+  --lightGreen: #cedd45;
+  --darkBlue: #208d81;
+  --darkPink: #b60050;
+  --darkOrange: #b65d00;
+  --darkGreen: #9aab00;
+}
+
+[data-theme="light"] {
+  --mainColor: #0d5c5a;
+  --bgColor: #e8f1f2;
+  --lighterSectionShade: #c8c8c9;
+  --strongerSectionShade: #b5b5b5;
+  --secondaryColor: #616266;
+  --thirdColor: #6f7073;
+  --fontColor1: #3e3e3e;
+  --externalLinkIcon: url("");
+  --fourthColor: 184, 184, 184;
+  --fontColor2: #3f4045;
+  --fontColor3: #4b4b4b;
+  --fifthColor: #555556;
+}
