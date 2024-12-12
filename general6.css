@@ -1,0 +1,606 @@
+@import "theme2.css";
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 98vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif;
+  overflow-y: visible !important;
+  background-color: var(--bgColor);
+}
+
+a {
+  display: inline;
+  color: var(--fontColor2);
+}
+
+a:link {
+  color: var(--fontColor2);
+}
+
+a[target="_blank"]:not(.externalIconHidden):after {
+  content: var(--externalLinkIcon);
+  display: inline-flex;
+  vertical-align: middle;
+  height: auto;
+  width: 0.95em;
+  margin-left: 5px;
+}
+
+.cite {
+  display: inline-block;
+  margin: 7px 10% 7px 10%;
+  padding-left: 7px;
+  border-left: 4px solid var(--categoryColor);
+  color: var(--fontColor2);
+}
+
+.cite > .skillsList {
+  padding-left: 7px;
+  margin: 0;
+}
+
+/* --- En-tête --- */
+
+#pageHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--mainColor);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 5px #870909;
+  z-index: 1000;
+}
+
+#logoIUT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightSideHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#commonMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+#controls > button,
+#hamburgerButton {
+  border: none;
+  background-color: transparent;
+  padding: none;
+  cursor: pointer;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 30vw;
+}
+
+#controls > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls > a {
+  text-decoration: none;
+}
+
+.controlIcon {
+  margin: 5px 0;
+}
+
+#luminosityButton {
+  background-image: url("icons Social nerworks/Day C.jpg");
+}
+
+#luminosityButton,
+#languageButton {
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+#languageButton {
+  display: flex;
+  align-items: center;
+  background-size: auto 16px;
+  height: 25px;
+  min-width: 25px;
+}
+
+#luminosityButton {
+  background-size: auto 25px;
+  min-width: 27px;
+}
+
+[data-theme="light"] #luminosityButton {
+  background-image: url("icons Social nerworks/Moon N.jpg");
+}
+
+#luminosityButton > span,
+#languageButton > span {
+  color: rgb(110, 10, 10)55, 255, 255);
+  margin-left: 17px;
+  font-size: 13px; /*appliquer ce style aussi au texte du bouton anglais + augmenter le margin entre les 2 boutons (anglais & darkmode*/
+}
+
+#luminosityButton > span {
+  margin-left: 18px;
+}
+
+[data-theme="light"] #luminosityButton > span {
+  margin-left: 12px;
+}
+
+#languageButton > span {
+  margin-left: 28px;
+}
+
+#languageButton {
+  background-image: url("icons Social nerworks/En Click.jpg");
+}
+
+[data-theme="light"] .lightButton,
+[data-theme="dark"] .darkButton {
+  display: none;
+}
+
+[data-theme="light"] .darkButton,
+[data-theme="dark"] .lightButton {
+  display: inline;
+}
+
+#studentsLinks {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 120px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#studentsLinks > ul {
+  position: fixed;
+  display: none;
+  padding: 0;
+  margin: 0 5px 0 0;
+  top: 28px;
+  width: 120px;
+  max-width: inherit;
+}
+
+#studentsLinks > ul > li {
+  background-color: var(--thirdColor);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 4px 7px;
+  transition: background-color 0.25s;
+}
+
+#studentsLinks > ul > li:hover {
+  background-color: var(--fifthColor);
+}
+
+#studentsLinks > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15.625px;
+  margin: 0;
+  background-color: var(--secondaryColor);
+  color: rgb(219, 67, 67)55, 255, 255);
+  font-size: 15px;
+  height: 18px;
+}
+
+#studentsLinks a {
+  color: rgb(212, 53, 207);
+  font-size: 14px;
+  width: 100%;
+  height: inherit;
+  text-decoration: none;
+}
+
+#studentsLinks:hover ul {
+  display: block;
+}
+
+.navTitle {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  cursor: pointer;
+  color: rgb(216, 36, 36)55, 255, 255);
+}
+
+.submenusNav {
+  padding: 0;
+}
+
+/* --- Contenu de la page --- */
+
+#pageContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* -- En-tête de la page -- */
+
+#pictureBanner {
+  width: 100vw;
+  height: 80px;
+  background-size: 100vw auto;
+}
+
+#contentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contentHeader > h1 {
+  margin: -20px 0 0 0;
+  padding: 5px 7px;
+  border-bottom: 3px solid rgb(15, 14, 14);
+  border-top: 3px solid rgb(57, 18, 199);
+  color: rgb(232, 159, 239)55, 255, 255);
+  font-size: 28px;
+  text-align: center;
+}
+
+/* -- Sections de la home page -- */
+
+#pageContent > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#pageContent > section.coloredBlock:nth-of-type(2n + 1) {
+  background-color: var(--strongerSectionShade);
+}
+
+#pageContent > section.coloredBlock:nth-of-type(2n + 2) {
+  background-color: var(--lighterSectionShade);
+}
+
+#pageContent > section > h2 {
+  color: rgb(180, 103, 103);
+  margin: -15px 0 20px 0;
+  padding: 5px 10px;
+  background-color: var(--mainColor);
+  text-align: center;
+  font-size: 20px;
+  max-width: 80vw;
+}
+
+/* --- Pied de page --- */
+
+#pageFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--mainColor);
+}
+
+#pageFooter > nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#footerLinksContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerLinks > a {
+  display: block;
+  margin: 2px 5px;
+  color: rgb(7, 7, 7);
+  font-size: 14px;
+  text-align: center;
+}
+
+#copyrightBanner {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--mainColor);
+  width: 100%;
+}
+
+#socialNetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px auto;
+}
+
+#socialNetworks > a {
+  color: rgb(236, 133, 133);
+}
+
+#socialNetworks > a > img {
+  margin: 0 3px;
+  width: 32px;
+}
+
+#copyrightBanner > p,
+#copyrightBanner > p > a {
+  color: rgb(224, 102, 102);
+  font-size: 11px;
+}
+
+#copyrightBanner > p {
+  margin: 0 20px 0 0;
+}
+
+#logoUniv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 25px 7px 5px;
+}
+
+/* Classes générales, utiles sur tout le site */
+
+.hidden {
+  display: none;
+}
+
+.button {
+  transition: transform, background-color 0.15s;
+}
+
+.button:hover {
+  transform: scale(1.025, 1.025);
+}
+
+.pagePath {
+  align-self: flex-start;
+  margin: 15px 2.5% 30px 10%;
+  color: rgb(173, 33, 33);
+}
+
+.pagePath > a,
+.pagePath > span {
+  color: var(--fontColor1);
+}
+
+.pathCurrentPage {
+  color: var(--fontColor3) !important;
+}
+
+/* blocs d'adresse */
+#addressContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#addressContainer > address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  color: var(--fontColor1);
+  font-size: 15px;
+  margin: 15px 15px;
+  background-color: rgb(var(--fourthColor));
+  padding: 15px;
+}
+
+address > .addressTitle {
+  font-size: 18px;
+  margin: 0 7px;
+}
+
+address > .addressContent {
+  color: var(--fontColor3);
+  margin: 2px 7px 15px 7px;
+}
+
+address > div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+address > div > span {
+  margin: 7px 15px;
+}
+
+address a {
+  color: var(--fontColor1);
+}
+
+.subsection,
+.chapo,
+.moreInformations {
+  width: 80%;
+  text-align: left;
+  color: var(--fontColor1);
+}
+
+.moreInformations {
+  margin-top: 20px;
+}
+
+.moreInformations > span {
+  font-weight: bold;
+}
+
+#certifList h4 {
+  margin-bottom: 5px;
+}
+
+#certifList p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+section {
+  display: flex;
+}
+
+section > h3 {
+  color: var(--fontColor1);
+  font-size: 20px;
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.sommaire {
+  border-collapse: collapse;
+  margin: 20px 10%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sommaire * {
+  color: rgb(231, 145, 145) !important;
+}
+
+.sommaireTop {
+  background-color: var(--fifthColor);
+  color: var(--fontColor1);
+}
+
+.sommaireBottom {
+  background-color: var(--secondaryColor);
+  font-size: 14px;
+}
+
+.sommaireContent {
+  margin: 5px 7px;
+  padding: 2px 40px 2px 40px;
+  list-style-type: square;
+}
+
+.sommaireContent > li {
+  margin: 3px 0;
+}
+
+.skillsList > li {
+  list-style-type: none;
+  text-align: left;
+  margin: 3px 0;
+}
+
+.skillsList > li:before {
+  content: "✓";
+  position: relative;
+  right: 7px;
+}
+
+section li {
+  list-style-type: square;
+  margin: 2px 0;
+  color: var(--fontColor2);
+}
+
+section > ul {
+  align-self: flex-start;
+  margin: 0 0 0 10%;
+}
+
+.faq > details {
+  width: 80%;
+  background-color: var(--bgColor);
+  margin: 3px 0;
+  color: rgb(210, 130, 130);
+}
+
+.faq .question {
+  background-color: var(--secondaryColor);
+  padding: 7px;
+  cursor: pointer;
+}
+
+.faq .answer {
+  margin: 7px;
+  color: var(--fontColor2);
+}
+
+.noBreak {
+  white-space: nowrap;
+}
+
+.titleRow > p {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+section > h4 {
+  align-self: flex-start;
+  margin: 10px 10% 10px 10%;
+  color: var(--fontColor1);
+}
+
+section > hr {
+  width: 80%;
+  border: 1px solid var(--fontColor2);
+  margin-top: 20px;
+}
+
+.universityTile {
+  width: 80%;
+  margin: 15px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--bgColor);
+  color: var(--fontColor2);
+}
+
+.universityTile > h4 {
+  align-self: flex-start;
+  color: var(--fontColor1);
+}
+
+.universityTile > * {
+  margin: 10px;
+}

@@ -1,0 +1,218 @@
+/* Bannière image en en-tête */
+
+#pictureBanner {
+  background-image: url("placeholder Forest.jpeg");
+}
+
+[data-theme="light"] #pictureBanner {
+  background-image: url("Forest World.jpg");
+}
+
+/* Tableau de "tuiles" */
+
+.tilesBoard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.tilesBoard > .tile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 35%;
+  min-width: 225px;
+  margin: 10px 20px;
+  height: inherit;
+  text-decoration: none;
+}
+
+.tilesBoard > .tile > .tileImage {
+  height: 170px;
+  width: 100%;
+  background-color: black;
+}
+
+.tilesBoard > .tile:hover .tileTitle {
+  background-color: rgba(238, 40, 124, 1);
+}
+
+.tilesBoard > .tile > .tileTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -33px;
+  height: 33px;
+  background-color: rgba(238, 40, 124, 0.7);
+  transition: background-color 0.25s;
+}
+
+.tilesBoard > .tile > .tileTitle > span {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+/* Tableau de tuiles en en-tête */
+
+#tileEtudierALIUT > .tileImage {
+  background-image: url("Photo Solodkyi Serhii/Solodkyi Serhii 11.jpg");
+  background-size: 100% auto;
+  background-position: center 100%;
+}
+
+#tilePartirALEtranger > .tileImage {
+  background-image: url("Photo Solodkyi Serhii/Solodkyi Serhii 3.jpg");
+  background-size: 100% auto;
+  background-position: center 95%;
+}
+
+/* Section atouts de l'IUT */
+
+#assetsIUT {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#assetsIUT > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--mainColor);
+  margin: 10px;
+  max-width: 220px;
+  max-height: 220px;
+  width: 70vw;
+  height: 70vw;
+}
+
+#assetsIUT > div > img {
+  margin: 15px 5px 7px 5px;
+  height: 50px;
+}
+
+#assetsIUT > div > p {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin: 7px 5px 15px 5px;
+}
+
+#assetsIUT > div > p > span {
+  text-align: center;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* Section Europe */
+
+#sectionEuropeContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#carteEurope {
+  width: 30vw;
+  max-width: 280px;
+  min-width: 200px;
+  margin: 10px;
+}
+
+#distances {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontColor1);
+  background-color: rgb(var(--fourthColor));
+  margin: 7px;
+}
+
+#distances > p {
+  min-width: 160px;
+  margin: 7px;
+  text-align: center;
+}
+
+#distances .hours {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#distances .connecteur {
+  font-size: 12px;
+  color: var(--fontColor2);
+}
+
+#distances .ville {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Section Chiffres */
+
+#sectionChiffres {
+  background-image: url("Forest World.jpg");
+  background-size: 130vw auto;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+}
+
+[data-theme="light"] #sectionChiffres {
+  background-image: url("Forest 2.jpg");
+}
+
+#chiffresCles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#chiffresCles > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(var(--fourthColor), 0.9);
+  align-items: center;
+  margin: 7px 10px;
+  width: 10vw;
+  min-width: 120px;
+  min-height: 120px;
+  height: 10vw;
+  text-align: center;
+  color: var(--fontColor1);
+  padding: 2px;
+}
+
+.chiffreCle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chiffreTitle {
+  color: var(--fontColor1);
+}
+
+/* Section En savoir plus */
+
+#sectionEnSavoirPlusEtudesIUT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px !important;
+}
+
+#sectionEnSavoirPlusEtudesIUT .pinkButton {
+  margin: 30px 7px 30px 7px;
+  border-radius: 3px;
+  text-align: center;
+}

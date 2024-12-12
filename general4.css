@@ -1,0 +1,61 @@
+#pictureBanner {
+  background-image: url("main-qimg-f5edfecee5dbd1520e34ea926502e4fa-lqforest.jpg");
+}
+
+.formationResult {
+  display: flex;
+  flex-direction: column;
+}
+
+.formationResult > div {
+  display: flex;
+}
+
+.formationResult > div > .universityPhoto {
+  width: 30%;
+  height: inherit;
+}
+
+.formationResult > div > .universityContent {
+  color: var(--fontColor2);
+  width: 70%;
+  padding: 7px;
+  border-top: 1px solid var(--fontColor2);
+}
+
+.formationResult > div:first-of-type > .universityContent {
+  border-top: none;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+}
+
+.titleRow h4 {
+  color: var(--fontColor1);
+  font-size: 18px;
+}
+
+.universityPhoto {
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#dundalkInfo .universityPhoto,
+#dundalkMMI .universityPhoto,
+#dundalkTC .universityPhoto {
+  background-image: url("Solodkyi Serhii 13.jpg");
+}
+
+#roumanieInfo .universityPhoto,
+#roumanieMMI .universityPhoto {
+  background-image: url("main-qimg-f5edfecee5dbd1520e34ea926502e4fa-lqforest.jpg");
+}
+
+#portugalGEA .universityPhoto,
+#portugalInfo .universityPhoto,
+#portugalMMI .universityPhoto,
+#portugalTC .universityPhoto {
+  background-image: url("icons Social nerworks/Freedom.jpg");
+}
